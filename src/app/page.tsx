@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import LandingBackground from "./components/LandingBackground";
 
 export default function Home() {
@@ -11,7 +13,7 @@ export default function Home() {
               british columbia youth developer collective
             </h2>
             <h1 className="max-w-2xl text-6xl font-extrabold text-white">
-              <span className="inline-block">BC's student-led</span>{" "}
+              <span className="inline-block">BC&apos;s student-led</span>{" "}
               <span className="inline-block">high school dev</span>{" "}
               <span className="inline-block">collective</span>
             </h1>
@@ -29,7 +31,7 @@ export default function Home() {
       <div className="bg-dark-700 z-10 flex w-full flex-row justify-center py-8">
         <div className="flex w-8/12 flex-row justify-between">
           <div className="flex items-center gap-2">
-            <img src="/logo.svg" className="w-8" />
+            <Image src="/logo.svg" alt="Logo" width={32} height={32} />
             <h1 className="text-4xl font-bold text-white">bcydc</h1>
           </div>
           <div className="flex items-center gap-x-5">
