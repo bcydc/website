@@ -10,7 +10,7 @@ export default function LandingBackground() {
               <div key={i} className="h-[1px] w-full bg-white" />
             ))}
         </div>
-        <div className="absolute left-0 top-0 flex flex-row gap-20">
+        <div className="absolute left-0 top-0 flex w-full flex-row gap-20 overflow-x-hidden">
           {Array(20)
             .fill(0)
             .map((x, i) => (

@@ -43,7 +43,7 @@ export default function Landing() {
           />
         </div>
       </div>
-      <div className="relative flex w-full flex-col gap-y-1.5 px-1.5 opacity-40 md:gap-y-2 md:px-2">
+      <div className="relative flex w-full flex-col gap-y-1.5 overflow-x-hidden px-1.5 opacity-40 md:gap-y-2 md:px-2">
         <Contributions />
         <Contributions />
         <Contributions />
