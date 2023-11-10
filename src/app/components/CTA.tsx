@@ -26,7 +26,7 @@ export default function CTA() {
         height={256}
         width={500}
         alt="Map of British Columbia"
-        className="hidden"
+        className="hidden md:block"
       />
     </div>
   );
