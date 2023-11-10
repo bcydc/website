@@ -6,3 +6,12 @@
   background: radial-gradient(rgb(57, 211, 83), rgb(0, 0, 0) 80%);
   opacity: 0.2;
 }
+
+.contribution-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
