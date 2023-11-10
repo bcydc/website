@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Script from "next/script";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
@@ -36,7 +36,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jakarta.className}>{children}</body>
+      <body className={jakarta.className}>
+        {children}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-E9N10N52TY" />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-E9N10N52TY');
+          `}
+        </Script>
+      </body>
     </html>
   );
 }
