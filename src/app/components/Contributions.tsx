@@ -1,4 +1,4 @@
-export default function () {
+export default function Contributions() {
   const colors = [
     "bg-g-300",
     "bg-g-500",
@@ -17,6 +17,7 @@ export default function () {
           const color = colors[Math.floor(Math.random() * colors.length)];
           return (
             <div
+              key={i}
               className={`h-3 min-w-[12px] rounded-sm md:h-4 md:min-w-[16px] ${color}`}
             />
           );

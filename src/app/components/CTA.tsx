@@ -8,9 +8,9 @@ export default function CTA() {
           Join our community :)
         </h3>
         <p className="font-extralight text-white md:max-w-md md:text-lg">
-          We're looking for high school students, club presidents, university
-          mentors and anyone else interested in joining us! Join our Discord
-          now!
+          We&apos;re looking for high school students, club presidents,
+          university mentors and anyone else interested in joining us! Join our
+          Discord now!
         </p>
         <a
           target="_blank"
