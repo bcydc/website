@@ -52,7 +52,7 @@ export default function Navbar() {
             className="hidden transform items-center rounded-md bg-gradient-to-r from-g-700 to-g-800 px-5 py-2 duration-300 hover:scale-[1.02] md:flex"
           >
             <p className="whitespace-nowrap text-xs text-white md:text-xl">
-              join now
+              Join now
             </p>
           </a>
         </div>
