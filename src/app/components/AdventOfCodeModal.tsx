@@ -15,7 +15,7 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
   return (
     <div
       onClick={() => showModal(false)}
-      className="absolute left-0 top-0 z-20 flex h-screen w-screen items-center justify-center overflow-hidden bg-black bg-opacity-70"
+      className="absolute left-0 top-0 z-40 flex h-screen w-screen items-center justify-center overflow-hidden bg-black bg-opacity-70"
     >
       <div
         onClick={(e) => e.stopPropagation()}
@@ -110,7 +110,7 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
               leaderboard!
             </li>
           </ol>
-          <p className="text-[0.5rem] leading-tight md:text-xs">
+          <p className="text-[0.5rem] leading-tight md:text-xs md:leading-normal">
             While anyone in the BCYDC Discord server is welcome to join our
             leaderboard, only high school students in British Columbia are
             eligible for the prizes. Also, I&apos;m going to work on contacting
