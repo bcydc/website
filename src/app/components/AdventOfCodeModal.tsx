@@ -37,6 +37,15 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
         <div className="flex flex-col gap-0.5 text-xs text-white md:gap-1 md:text-base 2xl:gap-2 2xl:text-lg">
           <div className="flex flex-col gap-0.5 md:gap-1 2xl:gap-2">
             <p>Hello British Columbia!</p>
+            <p className="inline md:hidden">
+              Over the next 25 days of the advent calendar, a small programming
+              challenge will be posted by Advent of Code every day at 9pm. You
+              don&apos;t need a computer science background to participate -
+              just a little programming knowledge and some problem solving
+              skills will get you pretty far. You don&apos;t need to check in
+              everyday, but make sure you tune in when you're free to win these
+              prizes as a BCYDC member:
+            </p>
             <p className="hidden md:inline">
               Over the next 25 days of the advent calendar, a small programming
               challenge will be posted by Advent of Code every day at 9pm. You
@@ -44,14 +53,13 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
               just a little programming knowledge and some problem solving
               skills will get you pretty far.{" "}
             </p>
-            <p>
+            <p className="hidden md:inline">
               This year, all BCYDC members will be a part of our own private
               leaderboard :) You don&apos;t need to check in everyday to win, so
               make sure you tune in whenever you have some free time! And
               here&apos;s the prizes you can win as a BCYDC member 💵{" "}
             </p>
           </div>
-
           <div className="flex flex-col gap-0.5 py-1 md:gap-1 md:py-2 md:text-lg 2xl:gap-2 2xl:py-4 2xl:text-xl">
             <p>
               <span className="font-bold">$75 Cash</span> - First place on
