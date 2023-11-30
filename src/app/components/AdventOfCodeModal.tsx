@@ -40,16 +40,16 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
             <p className="hidden md:inline">
               Over the next 25 days of the advent calendar, a small programming
               challenge will be posted by Advent of Code every day at 9pm. You
-              don't need a computer science background to participate - just a
-              little programming knowledge and some problem solving skills will
-              get you pretty far.{" "}
+              don&apos;t need a computer science background to participate -
+              just a little programming knowledge and some problem solving
+              skills will get you pretty far.{" "}
             </p>
             <p>
               This year, all BCYDC members will be a part of our own private
-              leaderboard :) You don't need to start on December 1st or check in
-              everyday to win, but if you just have a few minutes and want to
-              challenge yourself, make sure you tune in whenever you can! And
-              here's the prizes you can win as a BCYDC member 💵{" "}
+              leaderboard :) You don&apos;t need to start on December 1st or
+              check in everyday to win, but if you just have a few minutes and
+              want to challenge yourself, make sure you tune in whenever you
+              can! And here&apos;s the prizes you can win as a BCYDC member 💵{" "}
             </p>
           </div>
 
