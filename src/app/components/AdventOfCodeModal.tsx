@@ -112,11 +112,10 @@ export default function AdventOfCodeModal({ showModal }: { showModal: any }) {
             </li>
           </ol>
           <p className="text-[0.5rem] leading-tight md:text-xs md:leading-normal">
-            While anyone in the BCYDC Discord server is welcome to join our
-            leaderboard, only high school students in British Columbia are
-            eligible for the prizes. Also, I&apos;m going to work on contacting
-            sponsors to increase our prize pool and maybe reward more students!
-            If you&apos;re interested in sponsoring Canadian high school
+            Only high school students in British Columbia are eligible for the
+            prizes. Also, I&apos;m going to work on contacting sponsors to
+            increase our prize pool and maybe reward more students! If
+            you&apos;re interested in sponsoring Canadian high school
             developers, reach out on Discord or at hello@bcydc.ca!
           </p>
         </div>
