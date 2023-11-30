@@ -14,15 +14,15 @@ export default function Home() {
   const [modal, showmModal] = useState(true);
   return (
     <div className="flex h-full min-h-screen w-full flex-col items-center bg-black">
-      <div className="z-30 flex w-screen items-center justify-center gap-x-4 bg-g-500 py-4">
-        <p className="text-lg font-medium text-white">
+      <div className="z-30 flex w-screen items-center justify-center gap-x-4 bg-g-500 py-3 md:py-4">
+        <p className="text-xs font-medium text-white md:text-lg">
           We are currently hosting our very first event!
         </p>
         <div
           onClick={() => showmModal(true)}
           className="flex cursor-pointer rounded-lg bg-white bg-opacity-90 px-4 py-2 transition duration-300 hover:bg-opacity-100"
         >
-          <p className="select-none text-sm font-semibold text-g-700">
+          <p className="select-none text-xs font-semibold text-g-700 md:text-sm">
             Learn More
           </p>
         </div>
