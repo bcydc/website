@@ -1,9 +1,9 @@
-import Image from "next/image";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
-import "./tailwind.css";
-import Navbar from "@/components/Navbar";
+import "@/ui/styles/tailwind.css";
+import "react-notion-x/src/styles.css";
+import Navbar from "@/ui/components/Navbar";
 
 const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 

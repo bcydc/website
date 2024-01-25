@@ -9,7 +9,7 @@ export default function Home() {
         alt="Background Image"
         className="object-cover -z-10 min-h-[calc(100vw*0.6)]"
       />
-      <div className="flex w-full py-10 xl:py-32 justify-start">
+      <div className="flex w-full py-10 xl:py-28 justify-start">
         <div className="flex flex-col gap-3 xl:gap-6 items-start">
           <p className="font-semibold text-opacity-60 text-2xl xl:text-3xl text-white">
             Welcome to BCYDC
