@@ -15,7 +15,7 @@ export default function Home() {
             Welcome to BCYDC
           </p>
           <h1 className="text-4xl xl:text-6xl text-w-300 font-bold max-w-md xl:max-w-2xl leading-[2.6rem] xl:leading-[4.2rem]">
-            <span className="inline-block">British Columbia's</span>{" "}
+            <span className="inline-block">British Columbia&apos;s</span>{" "}
             <span className="inline-block">Largest High School</span>{" "}
             <span className="inline-block">Developer Community</span>
           </h1>
