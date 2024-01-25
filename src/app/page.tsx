@@ -1,39 +1,53 @@
-"use client";
-
-import CTA from "./components/CTA";
-import Goals from "./components/Goals";
-import Navbar from "./components/Navbar";
-import Vision from "./components/Vision";
-import Footer from "./components/Footer";
-import Landing from "./components/Landing";
-import AdventOfCodeModal from "./components/AdventOfCodeModal";
-
-import { useState } from "react";
+import Image from "next/image";
 
 export default function Home() {
-  const [modal, showmModal] = useState(true);
   return (
-    <div className="flex h-full min-h-screen w-full flex-col items-center bg-black">
-      <div className="z-30 flex w-screen items-center justify-center gap-x-4 bg-g-500 py-3 md:py-4">
-        <p className="text-xs font-medium text-white md:text-lg">
-          We are currently hosting our very first event!
-        </p>
-        <div
-          onClick={() => showmModal(true)}
-          className="flex cursor-pointer rounded-lg bg-white bg-opacity-90 px-4 py-2 transition duration-300 hover:bg-opacity-100"
-        >
-          <p className="select-none text-xs font-semibold text-g-700 md:text-sm">
-            Learn More
+    <div className="flex flex-col w-full">
+      <Image
+        src="/backgrounds/home.svg"
+        fill={true}
+        alt="Background Image"
+        className="object-cover -z-10 min-h-[calc(100vw*0.6)]"
+      />
+      <div className="flex w-full py-10 xl:py-28 justify-start">
+        <div className="flex flex-col gap-3 xl:gap-6 items-start">
+          <p className="font-semibold text-opacity-60 text-2xl xl:text-3xl text-white">
+            Welcome to BCYDC
           </p>
+          <h1 className="text-4xl xl:text-6xl text-w-300 font-bold max-w-md xl:max-w-2xl leading-[2.6rem] xl:leading-[4.2rem]">
+            <span className="inline-block">British Columbia&apos;s</span>{" "}
+            <span className="inline-block">Largest High School</span>{" "}
+            <span className="inline-block">Developer Community</span>
+          </h1>
+          <h6 className="text-w-500 text-sm xl:text-xl max-w-lg xl:max-w-2xl">
+            <span className="inline-block">
+              We are a collective of over 120 high school students with a
+            </span>{" "}
+            <span className="inline-block">
+              shared passion for computer science, software development,
+            </span>{" "}
+            <span className="inline-block">
+              robotics, and technology. Join us for hackathons,
+            </span>{" "}
+            <span className="inline-block">
+              competitions, mentorship, and more!
+            </span>
+          </h6>
+          <a
+            href="https://discord.bcydc.ca/"
+            target="_blank"
+            className="overflow-hidden relative select-none flex items-center px-6 xl:px-10 gap-2 xl:gap-2.5 rounded-full py-2 xl:py-3 bg-gradient-to-r from-g-700 to-g-500"
+          >
+            <div className="absolute w-full h-full top-0 left-0 bg-black bg-opacity-0 hover:bg-opacity-10 transition duration-300" />
+            <div className="relative w-5 xl:w-7 h-5 xl:h-7">
+              <Image alt="Discord Logo" src="/icons/discord.svg" fill={true} />
+            </div>
+            <p className="text-base xl:text-2xl text-white font-medium">
+              Join our Discord
+            </p>
+          </a>
         </div>
       </div>
-      {modal && <AdventOfCodeModal showModal={showmModal} />}
-      <Navbar />
-      <Landing />
-      <Vision />
-      <Goals />
-      <CTA />
-      <Footer />
     </div>
   );
 }
