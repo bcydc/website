@@ -7,19 +7,25 @@ export default function Home() {
         src="/backgrounds/home.svg"
         fill={true}
         alt="Background Image"
-        className="object-cover -z-10 min-h-[calc(100vw*0.6)]"
+        className="object-cover hidden md:inline -z-10 min-h-[calc(100vw*0.6)]"
       />
-      <div className="flex w-full py-10 xl:py-28 justify-start">
+      <Image
+        src="/backgrounds/home-mobile.svg"
+        fill={true}
+        alt="Background Image"
+        className="object-cover inline md:hidden -z-10 min-h-[calc(100vw*0.6)]"
+      />
+      <div className="flex w-full py-40 md:py-10 xl:py-28 justify-start">
         <div className="flex flex-col gap-3 xl:gap-6 items-start">
           <p className="font-semibold text-opacity-60 text-2xl xl:text-3xl text-white">
             Welcome to BCYDC
           </p>
-          <h1 className="text-4xl xl:text-6xl text-w-300 font-bold max-w-md xl:max-w-2xl leading-[2.6rem] xl:leading-[4.2rem]">
+          <h1 className="text-3xl md:text-4xl xl:text-6xl text-w-300 font-bold max-w-md xl:max-w-2xl md:leading-[2.6rem] xl:leading-[4.2rem]">
             <span className="inline-block">British Columbia&apos;s</span>{" "}
             <span className="inline-block">Largest High School</span>{" "}
             <span className="inline-block">Developer Community</span>
           </h1>
-          <h6 className="text-w-500 text-sm xl:text-xl max-w-lg xl:max-w-2xl">
+          <h6 className="text-w-500 text-xs md:text-sm xl:text-xl md:max-w-lg xl:max-w-2xl">
             <span className="inline-block">
               We are a collective of over 120 high school students with a
             </span>{" "}
