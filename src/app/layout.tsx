@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
