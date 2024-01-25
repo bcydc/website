@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${plus.className}`}>
-        <div className="flex flex-col items-center w-screen">
+        <div className="flex flex-col items-center w-full">
           <div className="flex flex-col items-center w-full max-w-[1536px] px-8">
             <Navbar />
             {children}
