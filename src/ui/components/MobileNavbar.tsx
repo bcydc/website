@@ -13,7 +13,7 @@ export default function MobileNavbar({
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="flex items-center w-full justify-between py-8">
+    <div className="flex md:hidden items-center w-full justify-between py-8">
       <AnimatePresence>
         {sidebar && (
           <motion.div
