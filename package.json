@@ -10,10 +10,8 @@
   },
   "dependencies": {
     "next": "14.1.0",
-    "notion-client": "^6.16.0",
     "react": "^18",
-    "react-dom": "^18",
-    "react-notion-x": "^6.16.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
