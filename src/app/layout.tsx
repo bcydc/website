@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -10,7 +11,7 @@ const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 const identity = {
   title: "British Columbia Youth Developer Collective",
   description:
-    "A collective of over 120 high school students with a shared passion for computer science, software development, robotics, and technology.",
+    "A collective of over 120 high school students in British Columbia with a shared passion for computer science, software development, robotics, and technology.",
 };
 
 export const metadata: Metadata = {
@@ -36,6 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>{identity.title}</title>
+        <meta name="description" content={identity.description} />
+      </Head>
       <body className={`${plus.className}`}>
         <div className="flex flex-col items-center w-full">
           <div className="flex flex-col items-center w-full md:max-w-[1536px] px-4 md:px-8">
