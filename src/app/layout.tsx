@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Script from "next/script";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
@@ -15,6 +14,8 @@ const identity = {
 };
 
 export const metadata: Metadata = {
+  title: identity.title,
+  description: identity.description,
   openGraph: {
     ...identity,
     url: "https://bcydc.ca",
@@ -37,10 +38,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <title>{identity.title}</title>
-        <meta name="description" content={identity.description} />
-      </Head>
       <body className={`${plus.className}`}>
         <div className="flex flex-col items-center w-full">
           <div className="flex flex-col items-center w-full md:max-w-[1536px] px-4 md:px-8">
