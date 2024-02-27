@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full px-4 md:px-8">
       <Image
         src="/backgrounds/home.svg"
         fill={true}

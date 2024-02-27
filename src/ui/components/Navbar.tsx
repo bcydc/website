@@ -1,10 +1,15 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Fragment } from "react";
+import { usePathname } from "next/navigation";
 
 import MobileNavbar from "./MobileNavbar";
 
 export default function Navbar() {
+  const path = usePathname();
+
   const links = [
     {
       label: "Mentors",
@@ -12,7 +17,7 @@ export default function Navbar() {
     },
     {
       label: "Clubs",
-      href: "https://bcydc.notion.site/26dd1ac1d08744b8b8701b8182c89f87",
+      href: "/clubs",
     },
     {
       label: "Events",
@@ -27,7 +32,11 @@ export default function Navbar() {
   return (
     <Fragment>
       <MobileNavbar links={links} />
-      <div className="hidden md:flex items-center w-full py-10 justify-between">
+      <div
+        className={`hidden md:flex z-10 ${
+          path !== "/" && "bg-g-800"
+        } items-center w-full py-10 justify-between px-4 md:px-8`}
+      >
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-6 xl:w-8 h-6 xl:h-8">
             <Image src="/icons/logo.svg" alt="Logo" fill={true} />

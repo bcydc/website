@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${plus.className}`}>
         <div className="flex flex-col items-center w-full">
-          <div className="flex flex-col items-center w-full md:max-w-[1536px] px-4 md:px-8">
+          <div className="flex flex-col items-center w-full min-h-screen md:max-w-[1536px] ">
             <Navbar />
             {children}
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-E9N10N52TY" />
