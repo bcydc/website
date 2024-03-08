@@ -13,19 +13,19 @@ export default function Navbar() {
   const links = [
     {
       label: "Mentors",
-      href: "https://bcydc.notion.site/722bfaf9474e480a8e9d56cc3a428e84",
+      href: "https://bcydc.notion.site/4609daa4db8043519e2b615574ff09ec",
     },
     {
       label: "Clubs",
-      href: "/clubs",
+      href: "https://bcydc.notion.site/09cfba7470824077b94d2d98d50708b3",
     },
     {
       label: "Events",
-      href: "https://bcydc.notion.site/e5ac620b89884b47b53fc68370415334?",
+      href: "https://bcydc.notion.site/0577cb29f6d54cf0a345c58eb9b127fd",
     },
     {
       label: "Sponsors",
-      href: "https://bcydc.notion.site/8b2a28e5f3124d0d896dbd22388e7316?",
+      href: "https://bcydc.notion.site/9aa22a54c8754544bb49e7e9818fb403",
     },
   ];
 
@@ -47,7 +47,7 @@ export default function Navbar() {
         </Link>
         <div className="flex items-center gap-3 xl:gap-6">
           {links.map((link, i) => (
-            <a href={link.href} key={i}>
+            <a href={link.href} key={i} target="_blank">
               <h1 className="text-lg xl:text-2xl text-white">{link.label}</h1>
             </a>
           ))}
