@@ -13,7 +13,7 @@ export default function MobileNavbar({
   const [sidebar, setSidebar] = useState(false);
 
   return (
-    <div className="flex md:hidden items-center w-full justify-between py-8">
+    <div className="flex md:hidden items-center w-full justify-between py-8 px-4">
       <AnimatePresence>
         {sidebar && (
           <motion.div
@@ -64,14 +64,15 @@ export default function MobileNavbar({
           </motion.div>
         )}
       </AnimatePresence>
-
       <Link href="/" className="flex items-center gap-3">
-        <div className="relative w-9 h-9">
+        <div className="relative w-10 h-10">
           <Image src="/icons/logo.svg" alt="Logo" fill={true} />
         </div>
-        <h1 className="text-4xl text-white font-semibold">BCYDC</h1>
+        <h1 className="text-lg text-white max-w-[200px] leading-tight font-semibold">
+          British Columbia Youth Developer Collective
+        </h1>
       </Link>
-      <div className="w-9 h-9 relative" onClick={() => setSidebar(true)}>
+      <div className="w-8 h-8 relative" onClick={() => setSidebar(true)}>
         <Image src="/icons/bars.svg" fill={true} alt="Hamburger" />
       </div>
     </div>
