@@ -27,7 +27,7 @@ export default function Home() {
           </h1>
           <h6 className="text-w-500 text-xs md:text-sm xl:text-xl md:max-w-lg xl:max-w-2xl">
             <span className="inline-block">
-              We are a collective of over 120 high school students with a
+              We are a collective of over 150 high school students with a
             </span>{" "}
             <span className="inline-block">
               shared passion for computer science, software development,
