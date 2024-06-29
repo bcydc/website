@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-g-700;
+  background-color: #044921;
+}
+
+.shadow {
+  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.3));
 }
