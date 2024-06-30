@@ -12,7 +12,8 @@
     "framer-motion": "^11.0.3",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-grid-gallery": "^1.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -22,6 +23,8 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "postcss": "^8",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

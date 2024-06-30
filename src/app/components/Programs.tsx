@@ -23,18 +23,18 @@ export default function Programs() {
   ];
 
   return (
-    <div className="relative flex flex-col items-center w-screen h-screen px-6">
+    <div className="relative flex h-full w-screen flex-col items-center px-6 pb-10">
       <div className="flex flex-col gap-4 md:w-[1024px] md:max-w-[1024px]">
         <div className="flex flex-col">
-          <h1 className="text-2xl md:text-3xl text-white font-bold">
+          <h1 className="text-2xl font-bold text-white md:text-3xl">
             Meet like-minded students
           </h1>
-          <p className="text-w-300 text-sm md:text-base">
+          <p className="text-sm text-w-300 md:text-base">
             Join us in events and programs to meet other high school developers
             from around British Columbia
           </p>
         </div>
-        <div className="flex flex-col w-full gap-4">
+        <div className="flex w-full flex-col gap-4">
           {programs.map((program, i) => (
             <Program key={i} {...program} />
           ))}

@@ -39,8 +39,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plus.className} overflow-y-scroll`}>
-        <div className="flex h-full w-full flex-col items-center">
+      <body className={`${plus.className}`}>
+        <div className="relative flex h-full w-full flex-col items-center overflow-y-hidden">
           <div className="flex h-full min-h-screen w-full flex-col items-center px-4 md:px-0">
             <Navbar />
             {children}

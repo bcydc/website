@@ -19,8 +19,12 @@ const config: Config = {
           dark: "#2A2E30",
         },
       },
+      screens: {
+        "3xl": "1920px",
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
