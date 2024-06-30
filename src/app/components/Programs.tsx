@@ -5,18 +5,21 @@ export default function Programs() {
     {
       name: "Study Meets",
       image: "study-meets.svg",
+      href: "/program/study-meets",
       duration: "Weekly",
       complete: false,
     },
     {
       name: "Boba Drops",
       image: "boba-drops.svg",
+      href: "/program/boba-drops",
       duration: "June 2024",
       complete: true,
     },
     {
       name: "Advent of Code",
       image: "advent-of-code.png",
+      href: "/program/advent-of-code",
       duration: "December 2023",
       complete: true,
     },

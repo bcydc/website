@@ -1,18 +1,24 @@
+import Link from "next/link";
 import { Fragment } from "react";
 
 export default function Program({
   name,
+  href,
   image,
   complete,
   duration,
 }: {
   name: string;
+  href: string;
   image: string;
   complete: boolean;
   duration: string;
 }) {
   return (
-    <div className="group relative w-full transform overflow-hidden rounded-lg border border-white border-opacity-40 shadow duration-300 hover:scale-[1.01]">
+    <Link
+      href={href}
+      className="group relative w-full transform overflow-hidden rounded-lg border border-white border-opacity-40 shadow duration-300 hover:scale-[1.01]"
+    >
       {complete && (
         <Fragment>
           <div className="absolute left-0 top-0 h-full w-full bg-black bg-opacity-30 transition duration-500 group-hover:opacity-0" />
@@ -27,6 +33,6 @@ export default function Program({
         src={`/banners/programs/${image}`}
         alt="Advent of Code"
       />
-    </div>
+    </Link>
   );
 }

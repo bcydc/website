@@ -9,10 +9,11 @@ export default function Program({
 }: {
   name: string;
   meta: {
-    when: string;
-    where: string;
-    who: string;
-    cost: string;
+    when?: string;
+    where?: string;
+    who?: string;
+    cost?: string;
+    prize?: string;
   };
   children: React.ReactNode;
   banner: string;
@@ -33,18 +34,31 @@ export default function Program({
         <p className="text-lg text-white text-opacity-70">{description}</p>
       </div>
       <div className="flex w-full flex-col items-start gap-2 text-white">
-        <p>
-          <span className="font-bold">When:</span> {meta.when}
-        </p>
-        <p>
-          <span className="font-bold">Where:</span> {meta.where}
-        </p>
-        <p>
-          <span className="font-bold">Who:</span> {meta.who}
-        </p>
-        <p>
-          <span className="font-bold">Cost:</span> {meta.cost}
-        </p>
+        {meta.when && (
+          <p>
+            <span className="font-bold">When:</span> {meta.when}
+          </p>
+        )}
+        {meta.where && (
+          <p>
+            <span className="font-bold">Where:</span> {meta.where}
+          </p>
+        )}
+        {meta.who && (
+          <p>
+            <span className="font-bold">Who:</span> {meta.who}
+          </p>
+        )}
+        {meta.cost && (
+          <p>
+            <span className="font-bold">Cost:</span> {meta.cost}
+          </p>
+        )}
+        {meta.prize && (
+          <p>
+            <span className="font-bold">Prizes:</span> {meta.prize}
+          </p>
+        )}
       </div>
       {children}
     </div>

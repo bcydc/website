@@ -138,7 +138,7 @@ export default function BobaDrops() {
         when: "Monday, June 24th, 2024",
         where: "Bob-Prittie Metrotown Library",
         who: "Any high school student in British Columbia",
-        cost: "Free",
+        prize: "Free Bubble Tea",
       }}
       banner="boba-drops.svg"
     >
