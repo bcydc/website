@@ -4,7 +4,7 @@ export default function ProgramLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex h-full w-[1024px] flex-col overflow-hidden pb-10">
+    <div className="flex h-full flex-col overflow-hidden pb-10 md:w-[1024px]">
       <img
         src="/backgrounds/background.svg"
         alt="Background Image"
