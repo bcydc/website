@@ -3,11 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function MobileNavbar({
-  links,
-}: {
-  links: { label: string; href: string }[];
-}) {
+export default function MobileNavbar() {
   return (
     <div className="flex w-full items-center justify-between py-8 md:hidden">
       <Link href="/" className="flex items-center gap-3">

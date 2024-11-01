@@ -39,9 +39,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+      </head>
       <body className={`${plus.className}`}>
-        <div className="relative flex h-full w-full flex-col items-center overflow-y-hidden">
-          <div className="flex h-full min-h-screen w-full flex-col items-center px-4 md:px-0">
+        <div className="bg-g-900 relative flex h-full w-full flex-col items-center overflow-y-hidden">
+          <div className="max-w- flex h-full min-h-screen w-full flex-col items-center px-4 md:w-[1024px] md:max-w-[1024px] md:px-0">
             <Navbar />
             {children}
             <Script src="https://www.googletagmanager.com/gtag/js?id=G-E9N10N52TY" />
