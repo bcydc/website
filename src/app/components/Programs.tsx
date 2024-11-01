@@ -26,7 +26,7 @@ export default function Programs() {
   ];
 
   return (
-    <div className="relative flex h-full w-screen flex-col items-center px-6 pb-10">
+    <div className="relative flex h-full w-screen flex-col items-center px-4 py-12 md:py-0">
       <div className="flex flex-col gap-4 md:w-[1024px] md:max-w-[1024px]">
         <div className="flex flex-col">
           <h1 className="text-2xl font-bold text-white md:text-3xl">

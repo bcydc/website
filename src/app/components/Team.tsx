@@ -1,8 +1,8 @@
 export default function Team() {
   return (
-    <div className="flex w-full flex-col items-center gap-10 py-24">
+    <div className="flex w-full flex-col items-center gap-10 py-12 md:py-24">
       <div className="flex flex-col items-center gap-2">
-        <h3 className="text-center text-2xl font-bold text-white md:text-4xl">
+        <h3 className="text-center text-3xl font-bold text-white md:text-4xl">
           The Team
         </h3>
         <h6 className="max-w-sm text-center text-lg font-light text-white md:text-xl">
