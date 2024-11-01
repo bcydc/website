@@ -21,12 +21,13 @@ export default function Program({
     >
       {complete && (
         <Fragment>
-          <div className="absolute left-0 top-0 h-full w-full bg-black bg-opacity-30 transition duration-500 group-hover:opacity-0" />
+          <div className="absolute left-0 top-0 h-full w-full" />
           <div className="absolute -left-[27.2rem] flex w-full -rotate-45 items-center justify-center bg-g-500 py-1.5 pr-24">
             <p className="text-xs font-bold text-white">{duration}</p>
           </div>
         </Fragment>
       )}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         draggable="false"
         className="select-none"

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MobileNavbar() {
   return (
-    <div className="flex w-full items-center justify-between py-8 md:hidden">
+    <div className="z-40 flex w-full items-center justify-between py-8 md:hidden">
       <Link href="/" className="flex items-center gap-3">
         <div className="relative h-10 w-10">
           <Image src="/icons/logo.svg" alt="Logo" fill={true} />

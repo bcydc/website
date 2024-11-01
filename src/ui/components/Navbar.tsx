@@ -10,9 +10,7 @@ export default function Navbar() {
   return (
     <Fragment>
       <MobileNavbar />
-      <div
-        className={`z-10 hidden items-center justify-between py-10 md:flex md:w-[1024px] md:max-w-[1024px]`}
-      >
+      <div className="z-40 hidden items-center justify-between py-10 md:flex md:w-[1024px] md:max-w-[1024px]">
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-6 w-6">
             <Image src="/icons/logo.svg" alt="Logo" fill={true} />

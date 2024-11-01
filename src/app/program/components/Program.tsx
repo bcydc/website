@@ -20,7 +20,7 @@ export default function Program({
   description: string;
 }) {
   return (
-    <div className="flex h-full w-full flex-col items-start justify-start gap-6">
+    <div className="z-30 flex h-full w-full flex-col items-start justify-start gap-6">
       <Image
         width={1024}
         height={300}

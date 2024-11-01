@@ -3,6 +3,13 @@ import Program from "./Program";
 export default function Programs() {
   const programs = [
     {
+      name: "yvrHacks 2024",
+      image: "yvrhacks.svg",
+      href: "/program/yvrhacks",
+      duration: "September 2024",
+      complete: true,
+    },
+    {
       name: "Study Meets",
       image: "study-meets.svg",
       href: "/program/study-meets",
