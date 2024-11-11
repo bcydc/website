@@ -19,7 +19,10 @@ export default function Navbar() {
             British Columbia Youth Developer Collective
           </h1>
         </Link>
-        <div className="flex items-center gap-3 xl:gap-6">
+        <div className="flex items-center gap-4">
+          <a href="https://instagram.com/bcydc" target="_blank">
+            <i className="fab fa-instagram text-xl text-white transition duration-300 hover:text-g-300" />
+          </a>
           <a
             href="https://discord.bcydc.ca/"
             target="_blank"

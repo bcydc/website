@@ -32,6 +32,15 @@ export default function Landing() {
           <i className="fab fa-discord text-g-800 md:text-lg" />
           <p className="font-medium text-g-800 md:text-lg">Join our Discord</p>
         </a>
+        <div className="mt-2 flex flex-row gap-2 md:mt-4">
+          <a href="https://yvrhacks.bcydc.ca/" target="_blank">
+            <p className="text-xs text-white underline">See yvrHacks</p>
+          </a>
+          <p className="text-xs text-white">x</p>
+          <a href="https://hcb.hackclub.com/yvrhacks" target="_blank">
+            <p className="text-xs text-white underline">See our finances</p>
+          </a>
+        </div>
       </div>
       <div className="order-1 flex w-full flex-col items-center justify-center md:order-2 md:w-11/12">
         <img src="/images/banner.png" className="w-full rounded-md" />
