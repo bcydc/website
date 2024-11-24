@@ -10,10 +10,10 @@ export default function Programs() {
       complete: true,
     },
     {
-      name: "Study Meets",
-      image: "study-meets.svg",
-      href: "/program/study-meets",
-      duration: "Weekly",
+      name: "Community Spotlight",
+      image: "community-spotlight.svg",
+      href: "/program/community-spotlight",
+      duration: "Regularly",
       complete: false,
     },
     {
@@ -24,11 +24,25 @@ export default function Programs() {
       complete: true,
     },
     {
+      name: "Study Meets",
+      image: "study-meets.svg",
+      href: "/program/study-meets",
+      duration: "Regularly",
+      complete: false,
+    },
+    {
       name: "Advent of Code",
       image: "advent-of-code.png",
       href: "/program/advent-of-code",
       duration: "December 2023",
       complete: true,
+    },
+    {
+      name: "Algorithm Explainers",
+      image: "algorithm-explainers.svg",
+      href: "/program/algorithm-explainers",
+      duration: "Regularly",
+      complete: false,
     },
   ];
 

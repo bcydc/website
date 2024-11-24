@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Program({
@@ -21,6 +22,9 @@ export default function Program({
 }) {
   return (
     <div className="z-30 flex h-full w-full flex-col items-start justify-start gap-6">
+      <Link href="/">
+        <p className="-mb-2 text-white hover:underline">← Go back</p>
+      </Link>
       <Image
         width={1024}
         height={300}
