@@ -32,7 +32,7 @@ export default function Program({
         draggable="false"
         className="select-none"
         src={`/banners/programs/${image}`}
-        alt="Advent of Code"
+        alt={name}
       />
     </Link>
   );
