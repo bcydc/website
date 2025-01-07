@@ -11,7 +11,7 @@ const plus = Plus_Jakarta_Sans({ subsets: ["latin"] });
 const identity = {
   title: "British Columbia Youth Developer Collective",
   description:
-    "A collective of over 180 high school students in British Columbia with a shared passion for computer science, software development, robotics, and technology.",
+    "A collective of over 300 high school students in British Columbia with a shared passion for computer science, software development, robotics, and technology.",
 };
 
 export const metadata: Metadata = {
