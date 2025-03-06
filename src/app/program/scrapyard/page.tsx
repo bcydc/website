@@ -1,9 +1,8 @@
 "use client";
-import { Gallery } from "react-grid-gallery";
 
 import Program from "../components/Program";
 
-export default function scrapyard() {
+export default function Scrapyard() {
   return (
     <Program
       name="Scrapyard Vancouver 2025"
@@ -17,6 +16,8 @@ The hackathon will take place at the Vancouver Independent School for Science an
         prize: "TBA!",
       }}
       banner="scrapyard.png"
-    />
+    >
+      <></>
+    </Program>
   );
 }
