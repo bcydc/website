@@ -17,7 +17,7 @@ The hackathon will take place at the Vancouver Independent School for Science an
       }}
       banner="scrapyard.png"
     >
-      <></>
+        <div className="absolute left-0 top-0 -z-10 h-full w-screen overflow-hidden bg-[#0e655c] bg-cover" />
     </Program>
   );
 }
