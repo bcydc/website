@@ -14,7 +14,7 @@ The hackathon will take place at the Vancouver Independent School for Science an
         where:
           "Vancouver Independent School for Science and Technology (VISST)",
         who: "Any high school student in British Columbia",
-        prize: "TBD!",
+        prize: "TBA!",
       }}
       banner="scrapyard.png"
     />
