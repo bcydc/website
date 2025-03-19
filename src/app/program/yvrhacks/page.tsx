@@ -1,4 +1,5 @@
 "use client";
+import { useState, useEffect } from "react";
 import { Gallery } from "react-grid-gallery";
 
 import Program from "../components/Program";
@@ -8,37 +9,68 @@ type Image = {
   width: number;
   height: number;
   alt: string;
+  isLoaded?: boolean;
 };
-const images: Image[] = [];
 
-for (let i = 1; i <= 72; i++) {
-  images.push({
-    src: `/images/yvrhacks/${i}.jpg`,
-    width: 1936,
-    height: 1296,
-    alt: "Students working on their websites",
-  });
-}
+export default function YvrHacks() {
+  const [images, setImages] = useState<Image[]>([]);
 
-for (let i = 145; i <= 175; i++) {
-  images.push({
-    src: `/images/yvrhacks/${i}.jpg`,
-    width: 1152,
-    height: 1728,
-    alt: "Students working on their websites",
-  });
-}
+  useEffect(() => {
+    const imageFiles: Image[] = [];
 
-images.sort(() => Math.random() - 0.5);
+    imageFiles.push({
+      src: `/images/yvrhacks/group.jpg`,
+      width: 1000,
+      height: 1000,
+      alt: "Group photo from yvrHacks",
+      isLoaded: false,
+    });
 
-images.unshift({
-  src: `/images/yvrhacks/group.jpg`,
-  width: 1936,
-  height: 1296,
-  alt: "New image description",
-});
+    for (let i = 1; i <= 105; i++) {
+      imageFiles.push({
+        src: `/images/yvrhacks/${i}.jpg`,
+        width: 1000,
+        height: 1000,
+        alt: "Students working at yvrHacks",
+        isLoaded: false,
+      });
+    }
 
-export default function yvrHacks() {
+    const firstImage = imageFiles[0];
+    const restImages = imageFiles.slice(1);
+    restImages.sort(() => Math.random() - 0.5);
+    const shuffledImages = [firstImage, ...restImages];
+
+    const loadedImages = shuffledImages.map((img) => {
+      const image = new Image();
+      image.onload = () => {
+        setImages((prevImages) =>
+          prevImages.map((prevImg) =>
+            prevImg.src === img.src
+              ? {
+                  ...prevImg,
+                  width: image.width,
+                  height: image.height,
+                  isLoaded: true,
+                }
+              : prevImg,
+          ),
+        );
+      };
+      image.onerror = () => {
+        setImages((prevImages) =>
+          prevImages.filter((prevImg) => prevImg.src !== img.src),
+        );
+      };
+      image.src = img.src;
+      return img;
+    });
+
+    setImages(loadedImages);
+  }, []);
+
+  const displayImages = images.filter((img) => img.isLoaded);
+
   return (
     <Program
       name="yvrHacks 2024"
@@ -76,11 +108,13 @@ The hackathon will take place at the Vancouver Independent School for Science an
         </p>
       </div>
       <div className="absolute left-0 top-0 -z-10 h-full w-screen overflow-hidden bg-[#0384C7] bg-cover" />
-      <Gallery
-        images={images}
-        defaultContainerWidth={1024}
-        enableImageSelection={false}
-      />
+      {displayImages.length > 0 && (
+        <Gallery
+          images={displayImages}
+          defaultContainerWidth={1024}
+          enableImageSelection={false}
+        />
+      )}
     </Program>
   );
 }
