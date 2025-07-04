@@ -33,11 +33,11 @@ export default function Landing() {
           <p className="font-medium text-g-800 md:text-lg">Join our Discord</p>
         </a>
         <div className="mt-2 flex flex-row gap-2 md:mt-4">
-          <a href="https://yvrhacks.bcydc.ca/" target="_blank">
-            <p className="text-xs text-white underline">See yvrHacks</p>
+          <a href="https://scrapyard.bcydc.ca/" target="_blank">
+            <p className="text-xs text-white underline">See Scrapyard</p>
           </a>
           <p className="text-xs text-white">x</p>
-          <a href="https://hcb.hackclub.com/yvrhacks" target="_blank">
+          <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank">
             <p className="text-xs text-white underline">See our finances</p>
           </a>
         </div>

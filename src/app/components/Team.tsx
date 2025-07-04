@@ -12,37 +12,51 @@ export default function Team() {
       <div className="flex w-full flex-col gap-4 md:gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
           <Member
-            name="Kevin Thomas"
-            image="kevin.png"
-            role="President"
-            href="https://kevinjosethomas.com/"
-          />
-          <Member
             name="Vuk Tacic"
             image="vuk.png"
-            role="Vice President"
+            role="President"
             href="https://www.linkedin.com/in/vuktacic/"
           />
-        </div>
-        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
           <Member
             name="Ethan Jin"
             image="ethan.png"
-            role="Marketing"
+            role="Vice President"
             href="https://www.linkedin.com/in/ethan-jin-0743722ab/"
           />
-          <Member name="Freddie Zhang" image="freddie.png" role="Marketing" />
-          <Member name="Simon Wong" image="simon.png" role="Sponsorship" />
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
           <Member
-            name="Johnny Dong"
-            image="johnny.png"
-            role="Treasury"
-            href="https://www.linkedin.com/in/johnny-dong2007/"
+            name="Finn Hofbauer"
+            image="finn.png"
+            role="Executive"
           />
-          <Member name="Shanvanth A" image="shaun.png" role="Logistics" />
-          <Member name="Carol Wu" image="carol.png" role="Logistics" />
+          <Member
+            name="Harry Liu"
+            image="harry.png"
+            role="Executive"
+          />
+          <Member
+            name="Kushal Gangarapu"
+            image="kushal.png"
+            role="Executive"
+          />
+        </div>
+        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
+          <Member
+            name="Marek Cai"
+            image="marek.png"
+            role="Executive"
+          />
+          <Member
+            name="Romina Paridel"
+            image="romina.png"
+            role="Executive"
+          />
+          <Member
+            name="Timothy Leung"
+            image="timothy.png"
+            role="Executive"
+          />
         </div>
       </div>
     </div>

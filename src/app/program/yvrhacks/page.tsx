@@ -76,7 +76,7 @@ export default function YvrHacks() {
       name="yvrHacks 2024"
       description="Welcome to British Columbia's biggest high school hackathon! yvrHacks is a beginner-friendly hackathon for high school students in Vancouver–and is the perfect place to collaborate, learn, and build something cool, with prizes for the top submissions! Get ready for 8 hours of coding, workshops, free meals, many prizes, and lots of fun!
 
-The hackathon will take place at the Vancouver Independent School for Science and Technology (VISST) at 1490 W Broadway, Vancouver! This hackathon is only open to students who registered on our website prior to the registration deadline."
+The hackathon took place at the Vancouver Independent School for Science and Technology (VISST) at 1490 W Broadway, Vancouver!"
       meta={{
         when: "Sunday, September 29th, 2024",
         where:
@@ -86,6 +86,9 @@ The hackathon will take place at the Vancouver Independent School for Science an
       }}
       banner="yvrhacks.svg"
     >
+      <a href="https://hcb.hackclub.com/yvrhacks" target="_blank">
+        <p className="text-sm text-white underline">See our finances!</p>
+      </a>
       <div className="w-full rounded bg-black bg-opacity-10 p-4">
         <p className="inline text-white">
           You can learn more about yvrHacks on the{" "}
