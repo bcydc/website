@@ -4,6 +4,11 @@ import Program from "../components/Program";
 
 import { Gallery } from "react-grid-gallery";
 
+import { useLightbox } from "@/hooks/useLightbox";
+
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+
 export default function StudyMeets() {
   const images = [
     {
@@ -50,6 +55,17 @@ export default function StudyMeets() {
     },
   ];
 
+  const {
+    currentImage,
+    nextImage,
+    prevImage,
+    handleClick,
+    handleClose,
+    handleMovePrev,
+    handleMoveNext,
+    imgLoad,
+  } = useLightbox(images);
+
   return (
     <Program
       name="Study Meets"
@@ -65,7 +81,24 @@ export default function StudyMeets() {
         images={images}
         defaultContainerWidth={1024}
         enableImageSelection={false}
+        onClick={handleClick}
       />
+
+      {!!currentImage && (
+        /* @ts-ignore */
+        <Lightbox
+          mainSrc={currentImage.src}
+          nextSrc={nextImage.src}
+          prevSrc={prevImage.src}
+          onCloseRequest={handleClose}
+          onMovePrevRequest={handleMovePrev}
+          onMoveNextRequest={handleMoveNext}
+          onImageLoad={imgLoad}
+          imagePadding={150}
+          animationDuration={200}
+          animationOnKeyInput={true}
+        />
+      )}
     </Program>
   );
 }
