@@ -4,10 +4,10 @@ import Program from "../components/Program";
 
 import { Gallery } from "react-grid-gallery";
 
-import { useLightbox } from "@/hooks/useLightbox";
+// import { useLightbox } from "@/hooks/useLightbox";
 
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
 
 export default function BobaDrops() {
   const images = [
@@ -135,16 +135,16 @@ export default function BobaDrops() {
     },
   ];
 
-  const {
-    currentImage,
-    nextImage,
-    prevImage,
-    handleClick,
-    handleClose,
-    handleMovePrev,
-    handleMoveNext,
-    imgLoad,
-  } = useLightbox(images);
+  // const {
+  //   currentImage,
+  //   nextImage,
+  //   prevImage,
+  //   handleClick,
+  //   handleClose,
+  //   handleMovePrev,
+  //   handleMoveNext,
+  //   imgLoad,
+  // } = useLightbox(images);
 
   return (
     <Program
@@ -163,11 +163,10 @@ export default function BobaDrops() {
         images={images}
         defaultContainerWidth={1024}
         enableImageSelection={false}
-        onClick={handleClick}
+        // onClick={handleClick}
       />
 
-      {!!currentImage && (
-        /* @ts-ignore */
+      {/* {!!currentImage && (
         <Lightbox
           mainSrc={currentImage.src}
           nextSrc={nextImage.src}
@@ -180,7 +179,7 @@ export default function BobaDrops() {
           animationDuration={200}
           animationOnKeyInput={true}
         />
-      )}
+      )} */}
     </Program>
   );
 }
