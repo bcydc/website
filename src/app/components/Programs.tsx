@@ -38,7 +38,7 @@ export default function Programs() {
       complete: false,
     },
     {
-      name: "Advent Of Code",
+      name: "Advent of Code",
       image: "advent-of-code.png",
       href: "/program/advent-of-code",
       duration: "December 2023",
