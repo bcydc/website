@@ -18,7 +18,13 @@ type Image = {
 
 export default function Scrapyard() {
   const [images, setImages] = useState<Image[]>([]);
-  const { index, open, clickHandler, close } = useLightbox();
+  const { index,
+    open,
+    clickHandler,
+    close,
+    carousel,
+    controller
+  } = useLightbox();
 
   useEffect(() => {
     const imageFiles: Image[] = [];
@@ -53,11 +59,11 @@ export default function Scrapyard() {
           prevImages.map((prevImg) =>
             prevImg.src === img.src
               ? {
-                  ...prevImg,
-                  width: image.width,
-                  height: image.height,
-                  isLoaded: true,
-                }
+                ...prevImg,
+                width: image.width,
+                height: image.height,
+                isLoaded: true,
+              }
               : prevImg,
           ),
         );
@@ -103,10 +109,13 @@ The hackathon will take place at the Vancouver Independent School for Science an
         />
       )}
       <Lightbox
+        styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.75)" } }}
         open={open}
         close={close}
         slides={images}
         index={index}
+        carousel={carousel}
+        controller={controller}
       />
     </Program>
   );
