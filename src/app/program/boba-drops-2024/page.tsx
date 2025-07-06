@@ -4,7 +4,20 @@ import Program from "../components/Program";
 
 import { Gallery } from "react-grid-gallery";
 
+import Lightbox from "yet-another-react-lightbox";
+import { useLightbox } from "@/hooks/useLightbox";
+import "yet-another-react-lightbox/styles.css";
+
 export default function BobaDrops2024() {
+  const {
+    index,
+    open,
+    clickHandler,
+    close,
+    carousel,
+    controller
+  } = useLightbox();
+
   const images = [
     {
       src: "/images/boba-drops-2024/1.jpg",
@@ -147,6 +160,17 @@ export default function BobaDrops2024() {
         images={images}
         defaultContainerWidth={1024}
         enableImageSelection={false}
+        onClick={clickHandler}
+      />
+
+      <Lightbox
+        styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.75)" } }}
+        open={open}
+        close={close}
+        slides={images}
+        index={index}
+        carousel={carousel}
+        controller={controller}
       />
     </Program>
   );

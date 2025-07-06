@@ -18,7 +18,8 @@ type Image = {
 
 export default function Scrapyard() {
   const [images, setImages] = useState<Image[]>([]);
-  const { index,
+  const {
+    index,
     open,
     clickHandler,
     close,
