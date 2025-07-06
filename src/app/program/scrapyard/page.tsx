@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Program from "../components/Program";
 
+
+
 type Image = {
   src: string;
   width: number;
