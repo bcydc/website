@@ -20,7 +20,7 @@ export default function Team() {
           <Member
             name="Ethan Jin"
             image="ethan.png"
-            role="Vice President"
+            role="Executive"
             href="https://www.linkedin.com/in/ethan-jin-0743722ab/"
           />
         </div>
