@@ -4,10 +4,10 @@ import { Gallery } from "react-grid-gallery";
 
 import Program from "../components/Program";
 
-import { useLightbox } from "@/hooks/useLightbox";
+// import { useLightbox } from "@/hooks/useLightbox";
 
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
 
 type Image = {
   src: string;
@@ -76,16 +76,16 @@ export default function YvrHacks() {
 
   const displayImages = images.filter((img) => img.isLoaded);
 
-  const {
-    currentImage,
-    nextImage,
-    prevImage,
-    handleClick,
-    handleClose,
-    handleMovePrev,
-    handleMoveNext,
-    imgLoad,
-  } = useLightbox(images);
+  // const {
+  //   currentImage,
+  //   nextImage,
+  //   prevImage,
+  //   handleClick,
+  //   handleClose,
+  //   handleMovePrev,
+  //   handleMoveNext,
+  //   imgLoad,
+  // } = useLightbox(images);
 
   return (
     <Program
@@ -132,12 +132,11 @@ The hackathon took place at the Vancouver Independent School for Science and Tec
           images={displayImages}
           defaultContainerWidth={1024}
           enableImageSelection={false}
-          onClick={handleClick}
+          // onClick={handleClick}
         />
       )}
 
-      {!!currentImage && (
-        /* @ts-ignore */
+      {/* {!!currentImage && (
         <Lightbox
           mainSrc={currentImage.src}
           nextSrc={nextImage.src}
@@ -150,7 +149,7 @@ The hackathon took place at the Vancouver Independent School for Science and Tec
           animationDuration={200}
           animationOnKeyInput={true}
         />
-      )}
+      )} */}
     </Program>
   );
 }

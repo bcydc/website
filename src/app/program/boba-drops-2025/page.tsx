@@ -6,10 +6,10 @@ import { Gallery } from "react-grid-gallery";
 
 import { ThumbnailImageProps } from "react-grid-gallery";
 
-import { useLightbox } from "@/hooks/useLightbox";
+// import { useLightbox } from "@/hooks/useLightbox";
 
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+// import Lightbox from "react-image-lightbox";
+// import "react-image-lightbox/style.css";
 
 const HoverImage = (props: ThumbnailImageProps) => {
   const { src, alt, title, style } = props.imageProps;
@@ -180,16 +180,16 @@ export default function BobaDrops() {
     },
   ];
 
-  const {
-    currentImage,
-    nextImage,
-    prevImage,
-    handleClick,
-    handleClose,
-    handleMovePrev,
-    handleMoveNext,
-    imgLoad,
-  } = useLightbox(images);
+  // const {
+  //   currentImage,
+  //   nextImage,
+  //   prevImage,
+  //   handleClick,
+  //   handleClose,
+  //   handleMovePrev,
+  //   handleMoveNext,
+  //   imgLoad,
+  // } = useLightbox(images);
 
   return (
     <Program
@@ -208,12 +208,12 @@ export default function BobaDrops() {
         images={images}
         defaultContainerWidth={1024}
         enableImageSelection={false}
-        onClick={handleClick}
+        // onClick={handleClick}
       />
 
-      {!!currentImage && (
+      {/* {!!currentImage && ( */}
         /* @ts-ignore */
-        <Lightbox
+        {/* <Lightbox
           mainSrc={currentImage.src}
           nextSrc={nextImage.src}
           prevSrc={prevImage.src}
@@ -225,7 +225,7 @@ export default function BobaDrops() {
           animationDuration={200}
           animationOnKeyInput={true}
         />
-      )}
+      )} */}
 
       <h1 className="text-center text-3xl font-bold text-white">
         Website Gallery
