@@ -7,7 +7,7 @@ export default function Programs() {
       image: "scrapyard.png",
       href: "/program/scrapyard",
       duration: "March 2025",
-      complete: false,
+      complete: true,
     },
     {
       name: "yvrHacks 2024",
