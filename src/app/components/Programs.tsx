@@ -24,9 +24,9 @@ export default function Programs() {
       complete: false,
     },
     {
-      name: "Boba Drops",
-      image: "boba-drops.svg",
-      href: "/program/boba-drops",
+      name: "Boba Drops 2024",
+      image: "boba-drops-2024.svg",
+      href: "/program/boba-drops-2024",
       duration: "June 2024",
       complete: true,
     },
