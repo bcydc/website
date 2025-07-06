@@ -5,6 +5,7 @@ import { Gallery } from "react-grid-gallery";
 import Program from "../components/Program";
 
 import Lightbox from "yet-another-react-lightbox";
+import { useLightbox } from "@/hooks/useLightbox";
 import "yet-another-react-lightbox/styles.css";
 
 type Image = {
@@ -17,10 +18,7 @@ type Image = {
 
 export default function Scrapyard() {
   const [images, setImages] = useState<Image[]>([]);
-  const [index, setIndex] = useState(-1);
-  const open = index >= 0;
-
-  const clickHandler = (i: number) => setIndex(i);
+  const { index, open, clickHandler, close } = useLightbox();
 
   useEffect(() => {
     const imageFiles: Image[] = [];
@@ -106,7 +104,7 @@ The hackathon will take place at the Vancouver Independent School for Science an
       )}
       <Lightbox
         open={open}
-        close={() => setIndex(-1)}
+        close={close}
         slides={images}
         index={index}
       />
