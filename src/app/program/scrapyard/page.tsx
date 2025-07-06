@@ -4,11 +4,6 @@ import { useEffect, useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Program from "../components/Program";
 
-// import { useLightbox } from "@/hooks/useLightbox";
-
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
-
 type Image = {
   src: string;
   width: number;
@@ -76,17 +71,6 @@ export default function Scrapyard() {
 
   const displayImages = images.filter((img) => img.isLoaded);
 
-  // const {
-  //   currentImage,
-  //   nextImage,
-  //   prevImage,
-  //   handleClick,
-  //   handleClose,
-  //   handleMovePrev,
-  //   handleMoveNext,
-  //   imgLoad,
-  // } = useLightbox(images);
-
   return (
     <Program
       name="Scrapyard Vancouver 2025"
@@ -112,22 +96,6 @@ The hackathon will take place at the Vancouver Independent School for Science an
           enableImageSelection={false}
         />
       )}
-
-      {/* {!!currentImage && ( */}
-        /* @ts-ignore */
-        {/* <Lightbox
-          mainSrc={currentImage.src}
-          nextSrc={nextImage.src}
-          prevSrc={prevImage.src}
-          onCloseRequest={handleClose}
-          onMovePrevRequest={handleMovePrev}
-          onMoveNextRequest={handleMoveNext}
-          onImageLoad={imgLoad}
-          imagePadding={150}
-          animationDuration={200}
-          animationOnKeyInput={true}
-        />
-      )} */}
     </Program>
   );
 }
