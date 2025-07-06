@@ -17,7 +17,10 @@ type Image = {
 
 export default function Scrapyard() {
   const [images, setImages] = useState<Image[]>([]);
-  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(-1);
+  const open = index >= 0;
+
+  const clickHandler = (i: number) => setIndex(i);
 
   useEffect(() => {
     const imageFiles: Image[] = [];
@@ -98,14 +101,15 @@ The hackathon will take place at the Vancouver Independent School for Science an
           images={displayImages}
           defaultContainerWidth={1024}
           enableImageSelection={false}
+          onClick={clickHandler}
         />
       )}
-        <Lightbox
-          open={open}
-          close={() => setOpen(false)}
-          slides={images}
-          
-        />
+      <Lightbox
+        open={open}
+        close={() => setIndex(-1)}
+        slides={images}
+        index={index}
+      />
     </Program>
   );
 }
