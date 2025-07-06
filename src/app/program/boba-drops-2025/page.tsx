@@ -11,19 +11,19 @@ import { ThumbnailImageProps } from "react-grid-gallery";
 // import Lightbox from "react-image-lightbox";
 // import "react-image-lightbox/style.css";
 
-const HoverImage = (props: ThumbnailImageProps) => {
-  const { src, alt, title, style } = props.imageProps;
+// const HoverImage = (props: ThumbnailImageProps) => {
+//   const { src, alt, title, style } = props.imageProps;
 
-  return (
-    <img
-      {...props.imageProps}
-      className={`block h-auto w-full cursor-pointer transition-transform duration-300 hover:scale-105`}
-      alt={alt}
-      title={title || ""}
-      style={style}
-    />
-  );
-};
+//   return (
+//     <img
+//       {...props.imageProps}
+//       className={`block h-auto w-full cursor-pointer transition-transform duration-300 hover:scale-105`}
+//       alt={alt}
+//       title={title || ""}
+//       style={style}
+//     />
+//   );
+// };
 
 export default function BobaDrops() {
   const images = [
@@ -233,13 +233,13 @@ export default function BobaDrops() {
       <p className="text-lg text-white">
         View the websites our participants submitted!
       </p>
-      <Gallery
+      {/* <Gallery
         images={thumbnails}
         thumbnailImageComponent={HoverImage}
         defaultContainerWidth={1024}
         enableImageSelection={false}
         onClick={(index, item) => window.open(item.link, "_blank")?.focus()}
-      />
+      /> */}
     </Program>
   );
 }
