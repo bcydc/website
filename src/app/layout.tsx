@@ -45,33 +45,24 @@ export default function RootLayout({
           href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"
         />
       </head>
-      <body className={`${plus.className}`}>
-        <div className="relative flex h-full w-full flex-col items-center overflow-y-hidden bg-g-900">
-          <div className="flex h-full min-h-screen w-full max-w-[1024px] flex-col items-center px-4 md:w-[1024px] md:max-w-[1024px] md:px-0">
-            <Navbar />
-            {children}
-            <Script src="https://www.googletagmanager.com/gtag/js?id=G-E9N10N52TY" />
-            <Script id="google-analytics">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-
-                gtag('config', 'G-E9N10N52TY');
-              `}
-            </Script>
-          </div>
-        </div>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-JD2FNNVXTR" />
-        <Script id="google-analytics">
-          {`
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-JD2FNNVXTR" />
+      <Script id="google-analytics">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('config', 'G-JD2FNNVXTR');
           `}
-        </Script>
+      </Script>
+
+      <body className={`${plus.className}`}>
+        <div className="relative flex h-full w-full flex-col items-center overflow-y-hidden bg-g-900">
+          <div className="flex h-full min-h-screen w-full max-w-[1024px] flex-col items-center px-4 md:w-[1024px] md:max-w-[1024px] md:px-0">
+            <Navbar />
+            {children}
+          </div>
+        </div>
       </body>
     </html>
   );
