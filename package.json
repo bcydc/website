@@ -15,6 +15,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-grid-gallery": "^1.0.1",
+    "react-photo-album": "^3.1.0",
     "yet-another-react-lightbox": "^3.24.0"
   },
   "devDependencies": {

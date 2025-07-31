@@ -1,6 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Gallery } from "react-grid-gallery";
+
+import { RowsPhotoAlbum } from "react-photo-album";
+import type { Photo } from "react-photo-album";
+import "react-photo-album/rows.css";
 
 import Program from "../components/Program";
 
@@ -123,14 +126,14 @@ The hackathon took place at the Vancouver Independent School for Science and Tec
         </p>
       </div>
       <div className="absolute left-0 top-0 -z-10 h-full w-screen overflow-hidden bg-[#0384C7] bg-cover" />
-      {displayImages.length > 0 && (
-        <Gallery
-          images={displayImages}
-          defaultContainerWidth={1024}
-          enableImageSelection={false}
-          onClick={clickHandler}
+      <div className="relative z-10 mt-8 w-full max-w-8xl mx-auto px-4">
+        <RowsPhotoAlbum
+          photos={images}
+          targetRowHeight={150}
+          spacing={5}
+          onClick={({ index }) => clickHandler(index)}
         />
-      )}
+      </div>
 
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.75)" } }}

@@ -2,7 +2,9 @@
 
 import Program from "../components/Program";
 
-import { Gallery } from "react-grid-gallery";
+import { RowsPhotoAlbum } from "react-photo-album";
+import type { Photo } from "react-photo-album";
+import "react-photo-album/rows.css";
 
 import Lightbox from "yet-another-react-lightbox";
 import { useLightbox } from "@/hooks/useLightbox";
@@ -74,12 +76,14 @@ export default function StudyMeets() {
       }}
       banner="study-meets.svg"
     >
-      <Gallery
-        images={images}
-        defaultContainerWidth={1024}
-        enableImageSelection={false}
-        onClick={clickHandler}
-      />
+      <div className="relative z-10 mt-8 w-full max-w-8xl mx-auto px-4">
+        <RowsPhotoAlbum
+          photos={images}
+          targetRowHeight={150}
+          spacing={5}
+          onClick={({ index }) => clickHandler(index)}
+        />
+      </div>
 
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.75)" } }}

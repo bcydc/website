@@ -2,32 +2,13 @@
 
 import Program from "../components/Program";
 
-import { Gallery } from "react-grid-gallery";
-
-import { ThumbnailImageProps } from "react-grid-gallery";
+import { RowsPhotoAlbum } from "react-photo-album";
+import type { Photo } from "react-photo-album";
+import "react-photo-album/rows.css";
 
 import Lightbox from "yet-another-react-lightbox";
 import { useLightbox } from "@/hooks/useLightbox";
 import "yet-another-react-lightbox/styles.css";
-
-const HoverImage = (props: ThumbnailImageProps) => {
-  const {
-    src,
-    alt,
-    title,
-    style
-  } = props.imageProps;
-
-  return (
-    <img
-      {...props.imageProps}
-      className={`block h-auto w-full cursor-pointer transition-transform duration-300 hover:scale-105`}
-      alt={alt}
-      title={title || ""}
-      style={style}
-    />
-  );
-};
 
 export default function BobaDrops() {
   const {
@@ -206,12 +187,14 @@ export default function BobaDrops() {
       banner="boba-drops-2024.svg"
     >
       <div className="absolute left-0 top-0 -z-40 h-full w-screen overflow-hidden bg-[#9F7636] bg-cover" />
-      <Gallery
-        images={images}
-        defaultContainerWidth={1024}
-        enableImageSelection={false}
-        onClick={clickHandler}
-      />
+      <div className="relative z-10 mt-8 w-full max-w-8xl mx-auto px-4">
+        <RowsPhotoAlbum
+          photos={images}
+          targetRowHeight={150}
+          spacing={5}
+          onClick={({ index }) => clickHandler(index)}
+        />
+      </div>
 
       <Lightbox
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, 0.75)" } }}
@@ -229,13 +212,14 @@ export default function BobaDrops() {
       <p className="text-lg text-white">
         View the websites our participants submitted!
       </p>
-      <Gallery
-        images={thumbnails}
-        thumbnailImageComponent={HoverImage}
-        defaultContainerWidth={1024}
-        enableImageSelection={false}
-        onClick={(index, item) => window.open(item.link, "_blank")?.focus()}
+      <div className="relative z-10 mt-8 w-full max-w-8xl mx-auto px-4">
+      <RowsPhotoAlbum
+        photos={thumbnails}
+        targetRowHeight={150}
+        spacing={5}
+        onClick={({ photo }) => window.open(photo.link, "_blank")?.focus()}
       />
+      </div>
     </Program>
   );
 }
