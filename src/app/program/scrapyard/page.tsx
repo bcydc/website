@@ -91,7 +91,7 @@ export default function Scrapyard() {
     <Program
       name="Scrapyard Vancouver 2025"
       description="Welcome to British Columbia's biggest upcoming youth hackathon! Scrapyard is a hackathon for high schoolers in the lower mainland, where you can make the stupidest things you can think of! Anything, from a lamp that flashes faster the slower you type to those ideas you wouldn't dare to consider useful goes at Scrapyard. No matter your experience, Scrapyard Vancouver need you and your scrappy ideas! 
-The hackathon will take place at the Vancouver Independent School for Science and Technology (VISST) at 1490 W Broadway, Vancouver! This hackathon is only open to students who registered on our website prior to the registration deadline."
+The hackathon took place at the Vancouver Independent School for Science and Technology (VISST) at 1490 W Broadway, Vancouver!"
       meta={{
         when: "Saturday, March 15th, 2025",
         where:
@@ -99,7 +99,7 @@ The hackathon will take place at the Vancouver Independent School for Science an
         who: "Any high school student in British Columbia",
         prize: "Assorted prizes, t-shirts, and more!",
       }}
-      banner="scrapyard.png"
+      banner="scrapyard.svg"
     >
       <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank">
         <p className="text-sm text-white underline">See our finances!</p>

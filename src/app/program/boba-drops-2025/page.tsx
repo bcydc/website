@@ -184,7 +184,7 @@ export default function BobaDrops() {
         who: "Any high school student in British Columbia",
         prize: "Free Bubble Tea!",
       }}
-      banner="boba-drops-2024.svg"
+      banner="boba-drops-2025.svg"
     >
       <div className="absolute left-0 top-0 -z-40 h-full w-screen overflow-hidden bg-[#9F7636] bg-cover" />
       <div className="relative z-10 mt-8 w-full max-w-8xl mx-auto px-4">

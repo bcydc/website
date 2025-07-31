@@ -4,7 +4,7 @@ export default function Programs() {
   const programs = [
     {
       name: "Scrapyard Vancouver",
-      image: "scrapyard.png",
+      image: "scrapyard.svg",
       href: "/program/scrapyard",
       duration: "March 2025",
       complete: true,
@@ -14,6 +14,13 @@ export default function Programs() {
       image: "yvrhacks.svg",
       href: "/program/yvrhacks",
       duration: "September 2024",
+      complete: true,
+    },
+    {
+      name: "Boba Drops 2025",
+      image: "boba-drops-2025.svg",
+      href: "/program/boba-drops-2025",
+      duration: "July 2025",
       complete: true,
     },
     {

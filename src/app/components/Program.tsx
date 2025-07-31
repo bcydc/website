@@ -17,7 +17,7 @@ export default function Program({
   return (
     <Link
       href={href}
-      className="group relative w-full transform overflow-hidden rounded-lg border border-white border-opacity-40 shadow duration-300 hover:scale-[1.01]"
+      className="group relative w-full transform overflow-hidden rounded-lg border border-white border-opacity-0 shadow duration-300 hover:scale-[1.03] hover:-rotate-[0.01rad] transition-all ease-in-out"
     >
       {complete && (
         <Fragment>
