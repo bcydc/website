@@ -1,8 +1,16 @@
 "use client";
 
+import { useEffect } from "react";
 import Program from "../components/Program";
 
 export default function AlgorithmExplainers() {
+  useEffect(() => {
+    document.documentElement.style.backgroundColor = "#125636";
+    return () => {
+      document.documentElement.style.backgroundColor = "";
+    };
+  }, []);
+
   return (
     <Program
       name="Algorithm Explainers"

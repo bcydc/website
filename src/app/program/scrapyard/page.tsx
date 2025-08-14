@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useEffect as useEffectClient } from "react";
 
 import { RowsPhotoAlbum } from "react-photo-album";
 import type { Photo } from "react-photo-album";
@@ -30,6 +31,13 @@ export default function Scrapyard() {
     carousel,
     controller
   } = useLightbox();
+
+  useEffectClient(() => {
+    document.documentElement.style.backgroundColor = "#0e655c";
+    return () => {
+      document.documentElement.style.backgroundColor = "";
+    };
+  }, []);
 
   useEffect(() => {
     const imageFiles: Image[] = [];

@@ -31,6 +31,13 @@ export default function YvrHacks() {
   } = useLightbox();
 
   useEffect(() => {
+    document.documentElement.style.backgroundColor = "#0384C7";
+    return () => {
+      document.documentElement.style.backgroundColor = "";
+    };
+  }, []);
+
+  useEffect(() => {
     const imageFiles: Image[] = [];
 
     imageFiles.push({

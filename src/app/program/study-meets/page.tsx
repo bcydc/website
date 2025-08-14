@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import Program from "../components/Program";
 
 import { RowsPhotoAlbum } from "react-photo-album";
@@ -19,6 +20,13 @@ export default function StudyMeets() {
     carousel,
     controller
   } = useLightbox();
+
+  useEffect(() => {
+    document.documentElement.style.backgroundColor = "#125636";
+    return () => {
+      document.documentElement.style.backgroundColor = "";
+    };
+  }, []);
 
   const images = [
     {
