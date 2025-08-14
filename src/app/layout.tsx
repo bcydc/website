@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-g-900">
       <head>
         <link
           rel="stylesheet"
@@ -56,7 +56,7 @@ export default function RootLayout({
           `}
       </Script>
 
-      <body className={`${plus.className}`}>
+      <body className={`${plus.className} bg-g-900`}>
         <div className="relative flex h-full w-full flex-col items-center overflow-y-hidden bg-g-900">
           <div className="flex h-full min-h-screen w-full max-w-[1024px] flex-col items-center px-4 md:w-[1024px] md:max-w-[1024px] md:px-0">
             <Navbar />

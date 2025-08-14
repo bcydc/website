@@ -20,6 +20,9 @@ export default function Navbar() {
           </h1>
         </Link>
         <div className="flex items-center gap-4">
+          <a href="https://github.com/bcydc" target="_blank">
+            <i className="fab fa-github text-xl text-white transition duration-300 hover:text-g-300" />
+          </a>
           <a href="https://instagram.com/bcydc" target="_blank">
             <i className="fab fa-instagram text-xl text-white transition duration-300 hover:text-g-300" />
           </a>
