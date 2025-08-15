@@ -11,14 +11,29 @@ export default function Navbar() {
     <Fragment>
       <MobileNavbar />
       <div className="z-40 hidden items-center justify-between py-10 md:flex md:w-[1024px] md:max-w-[1024px]">
-        <Link href="/" className="flex items-center gap-3">
-          <div className="relative h-6 w-6">
-            <Image src="/icons/logo.svg" alt="Logo" fill={true} />
+        <div className="flex flex-col gap-1">
+          <Link href="/" className="flex items-center gap-3">
+            <div className="relative h-6 w-6">
+              <Image src="/icons/logo.svg" alt="Logo" fill={true} />
+            </div>
+            <h1 className="text-2xl font-medium text-white">
+              British Columbia Youth Developer Collective
+            </h1>
+          </Link>
+          <div className="flex flex-row gap-2">
+            <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
+              Finances
+            </a>
+            <p className="text-xs text-white">x</p>
+            <a href="https://scrapyard.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
+              Scrapyard
+            </a>
+            <p className="text-xs text-white">x</p>
+            <a href="https://yvrHacks.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
+              yvrHacks
+            </a>
           </div>
-          <h1 className="text-2xl font-medium text-white">
-            British Columbia Youth Developer Collective
-          </h1>
-        </Link>
+        </div>
         <div className="flex items-center gap-4">
           <a href="https://github.com/bcydc" target="_blank">
             <i className="fab fa-github text-xl text-white transition duration-300 hover:text-g-300" />

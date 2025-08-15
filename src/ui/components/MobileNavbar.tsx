@@ -2,18 +2,42 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function MobileNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="z-40 flex w-full items-start justify-between pt-8 -pb-4 md:hidden">
-      <Link href="/" className="flex items-center gap-3">
-        <div className="relative h-10 w-10">
-          <Image src="/icons/logo.svg" alt="Logo" fill={true} />
+      <div className="flex flex-col gap-1">
+        <Link href="/" className="flex items-center gap-3">
+          <div className="relative h-10 w-10">
+            <Image src="/icons/logo.svg" alt="Logo" fill={true} />
+          </div>
+          <h1 className="max-w-[200px] text-lg font-semibold leading-tight text-white">
+            British Columbia Youth Developer Collective
+          </h1>
+        </Link>
+        <div className="flex flex-col gap-1">
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="text-xs text-white hover:text-g-300 transition duration-300 flex items-center gap-1 ml-[0px]"
+          >
+            Links <i className={`fas fa-chevron-${isMenuOpen ? 'up' : 'down'} text-xs`} />
+          </button>
+          <div className={`flex flex-col gap-1 mt-1 ml-[0px] overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300">
+              Finances
+            </a>
+            <a href="https://scrapyard.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300">
+              Scrapyard
+            </a>
+            <a href="https://yvrHacks.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 mb-2">
+              yvrHacks
+            </a>
+          </div>
         </div>
-        <h1 className="max-w-[200px] text-lg font-semibold leading-tight text-white">
-          British Columbia Youth Developer Collective
-        </h1>
-      </Link>
+      </div>
       <div className="flex flex-col items-end gap-2">
         <a
           href="https://discord.bcydc.ca/"
