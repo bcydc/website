@@ -21,9 +21,9 @@ export default function Navbar() {
             </h1>
           </Link>
           <div className="flex flex-row gap-2">
-            <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
+            <Link href="/finances" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
               Finances
-            </a>
+            </Link>
             <p className="text-xs text-white">x</p>
             <a href="https://scrapyard.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
               Scrapyard
