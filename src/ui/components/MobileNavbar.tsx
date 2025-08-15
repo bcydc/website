@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function MobileNavbar() {
   return (
-    <div className="z-40 flex w-full items-center justify-between py-8 md:hidden">
+    <div className="z-40 flex w-full items-start justify-between pt-8 -pb-4 md:hidden">
       <Link href="/" className="flex items-center gap-3">
         <div className="relative h-10 w-10">
           <Image src="/icons/logo.svg" alt="Logo" fill={true} />
@@ -14,7 +14,7 @@ export default function MobileNavbar() {
           British Columbia Youth Developer Collective
         </h1>
       </Link>
-      <div className="flex items-center gap-3 xl:gap-6">
+      <div className="flex flex-col items-end gap-2">
         <a
           href="https://discord.bcydc.ca/"
           target="_blank"
@@ -23,6 +23,14 @@ export default function MobileNavbar() {
           <i className="fab fa-discord text-g-800" />
           <p className="font-medium text-g-800">Join</p>
         </a>
+        <div className="flex gap-3 pr-2 justify-end">
+          <a href="https://github.com/bcydc" target="_blank">
+            <i className="fab fa-github text-lg text-white transition duration-300 hover:text-g-300" />
+          </a>
+          <a href="https://instagram.com/bcydc" target="_blank">
+            <i className="fab fa-instagram text-lg text-white transition duration-300 hover:text-g-300" />
+          </a>
+        </div>
       </div>
     </div>
   );
