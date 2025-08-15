@@ -25,7 +25,7 @@ export default function MobileNavbar() {
           >
             Links <i className={`fas fa-chevron-${isMenuOpen ? 'up' : 'down'} text-xs`} />
           </button>
-          <div className={`flex flex-col gap-1 mt-1 ml-[0px] overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0'}`}>
+          <div className={`flex flex-col gap-1 mt-1 ml-[0px] overflow-hidden transition-all duration-500 ease-in-out ${isMenuOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}>
             <a href="https://hcb.hackclub.com/scrapyard-vancouver" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300">
               Finances
             </a>
