@@ -31,6 +31,13 @@ export default function Landing() {
           <i className="fab fa-discord text-g-800 md:text-lg" />
           <p className="font-medium text-g-800 md:text-lg">Join our Discord</p>
         </a>
+        {/* !!!!!!!! VERY VERY IMPORTANT DO NOT REMOVE THIS DIV OR WE ARE ON THE HOOK FOR $700 CAD !!!!!!!! */}
+        <div className="flex items-center gap-2 mt-10">
+          <img src="/icons/jukebox-logo.svg" alt="Jukebox" className="h-8" />
+          <p className="text-sm text-w-300 ml-2">
+            Want some free stickers? Find an executive at an event <br /> and ask for some <a className="underline" href="https://www.jukeboxprint.com/custom-stickers">custom stickers</a> from Jukebox!
+          </p>
+        </div>
       </div>
       <div className="order-1 flex w-full flex-col items-center justify-center md:order-2 md:w-11/12">
         <img src="/images/banner.png" alt="Photos of students" className="w-full rounded-md" />
