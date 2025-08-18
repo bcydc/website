@@ -35,7 +35,7 @@ export default function Landing() {
         <div className="flex items-center gap-2 mt-10">
           <img src="/icons/jukebox-logo.svg" alt="Jukebox" className="h-8" />
           <p className="text-sm text-w-300 ml-2">
-            Want some free stickers? Find an executive at an event <br /> and ask for some <a className="underline" href="https://www.jukeboxprint.com/custom-stickers">custom stickers</a> from Jukebox!
+            Want some free stickers? Find an executive at an event <br /> and ask for some <a className="underline hover:text-g-300 transition duration-300" href="https://www.jukeboxprint.com/custom-stickers">custom stickers</a> from Jukebox!
           </p>
         </div>
       </div>
