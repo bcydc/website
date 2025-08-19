@@ -25,10 +25,19 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "postcss": "^8",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "sharp": "^0.34.3",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{png,jpg,jpeg}": [
+      "node scripts/optimize-images.mjs",
+      "git add"
+    ]
   }
 }
