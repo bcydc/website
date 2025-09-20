@@ -38,6 +38,7 @@ export default function Landing() {
             Want some free stickers? Find an executive at an event <br /> and ask for some <a className="underline hover:text-g-300 transition duration-300" href="https://www.jukeboxprint.com/custom-stickers">custom stickers</a> from Jukebox!
           </p>
         </div>
+         {/* !!!!!!!! SEE ABOVE !!!!!!!! */}
       </div>
       <div className="order-1 flex w-full flex-col items-center justify-center md:order-2 md:w-11/12">
         <img src="/images/banner.png" alt="Photos of students" className="w-full rounded-md" />
