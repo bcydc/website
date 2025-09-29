@@ -25,6 +25,10 @@ export default function Navbar() {
               Finances
             </Link>
             <p className="text-xs text-white">x</p>
+            <a href="https://daydream.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
+              Daydream
+            </a>
+               <p className="text-xs text-white">x</p>
             <a href="https://scrapyard.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300 underline">
               Scrapyard
             </a>
