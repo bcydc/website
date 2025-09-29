@@ -1,5 +1,5 @@
 # [bcydc.ca](https://bcydc.ca/)
-The British Columbia Youth Developer Collective is British Columbia's largest high school developer community. We are home to over 300 high school students with a shared passion for computer science, software development, robotics, and technology. Join us for hackathons, competitions, mentorship, and more!
+The British Columbia Youth Developer Collective is British Columbia's largest high school developer community. We are home to over 450 high school students with a shared passion for computer science, software development, robotics, and technology. Join us for hackathons, competitions, mentorship, and more!
 
 Our website is developed with NextJS and deployed via Cloudflare Pages. Feel free to make contributions via a pull request! All source code is available in this repository.
 

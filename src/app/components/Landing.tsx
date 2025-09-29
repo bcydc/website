@@ -11,7 +11,7 @@ export default function Landing() {
         </h1>
         <h6 className="text-sm text-w-500 md:max-w-lg xl:max-w-xl xl:text-base">
           <span className="md:inline-block">
-            We are a collective of over 300 high school students with a
+            We are a collective of over 450 high school students with a
           </span>{" "}
           <span className="md:inline-block">
             shared passion for computer science, software development,
