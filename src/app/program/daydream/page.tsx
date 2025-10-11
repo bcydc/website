@@ -50,7 +50,7 @@ export default function Daydream() {
     //   isLoaded: false,
     // });
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 292; i++) {
       imageFiles.push({
         src: `/images/daydream/${i}.jpg`,
         width: 1000,
