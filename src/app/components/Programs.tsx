@@ -7,7 +7,7 @@ export default function Programs() {
       image: "daydream.svg",
       href: "/program/daydream",
       duration: "September 2025",
-      complete: false,
+      complete: true,
     },
     {
       name: "Scrapyard Vancouver",
