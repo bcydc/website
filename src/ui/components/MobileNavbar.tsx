@@ -29,6 +29,9 @@ export default function MobileNavbar() {
             <Link href="/finances" className="text-xs text-white hover:text-g-300 transition duration-300">
               Finances
             </Link>
+            <a href="https://daydream.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300">
+              Daydream
+            </a>
             <a href="https://scrapyard.bcydc.ca/" target="_blank" className="text-xs text-white hover:text-g-300 transition duration-300">
               Scrapyard
             </a>
