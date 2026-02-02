@@ -29,6 +29,7 @@ export default function Team() {
             name="Finn Hofbauer"
             image="finn.png"
             role="Executive"
+            href="https://www.linkedin.com/in/finn-hofbauer-7439b2376/"
           />
           <Member
             name="Harry Liu"
@@ -56,6 +57,12 @@ export default function Team() {
             name="Timothy Leung"
             image="timothy.png"
             role="Executive"
+          />
+          <Member
+            name="James Streeter"
+            image="james.png"
+            role="Executive"
+            href="https://www.linkedin.com/in/james-streeter-19b111380/"
           />
         </div>
       </div>
