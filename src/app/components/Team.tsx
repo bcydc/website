@@ -58,13 +58,15 @@ export default function Team() {
             image="timothy.png"
             role="Executive"
           />
+                 </div>
+                 <div>
           <Member
             name="James Streeter"
             image="james.png"
             role="Executive"
             href="https://www.linkedin.com/in/james-streeter-19b111380/"
           />
-        </div>
+  </div>
       </div>
     </div>
   );
