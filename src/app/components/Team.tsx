@@ -84,7 +84,7 @@ function Member({
   return (
     <div className="flex flex-col items-center gap-4">
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={`/team/${image}`} alt={name} className="w-40" />
+      <img src={`/team/${image}`} alt={name} className="w-40 rounded-full object-cover" />
       <div className="flex flex-col items-center">
         <div className="flex items-center gap-2">
           <p className="text-xl font-bold text-white">{name}</p>
