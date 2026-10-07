@@ -11,63 +11,42 @@ export default function Team() {
       </div>
       <div className="flex w-full flex-col gap-4 md:gap-10">
         <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
-          <Member
-            name="Vuk Tacic"
-            image="vuk.png"
-            role="President"
-            href="https://www.linkedin.com/in/vuktacic/"
-          />
-          <Member
-            name="Ethan Jin"
-            image="ethan.png"
-            role="Vice-President"
-            href="https://www.linkedin.com/in/ethan-jin-0743722ab/"
-          />
         </div>
         <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
           <Member
             name="Finn Hofbauer"
             image="finn.png"
-            role="Executive"
+            role="President"
             href="https://www.linkedin.com/in/finn-hofbauer-7439b2376/"
           />
           <Member
             name="Harry Liu"
             image="harry.png"
             role="Executive"
+            href="https://www.linkedin.com/in/harry-liu-b768a0382/"
           />
+        </div>
+        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
+
+          <Member
+            name="Romina Paridel"
+            image="romina.png"
+            role="Executive"
+          />
+
           <Member
             name="Kushal Gangarapu"
             image="kushal.png"
             role="Executive"
             href="https://www.linkedin.com/in/kushal-gangarapu/"
           />
-        </div>
-        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row md:gap-40">
-          <Member
-            name="Marek Cai"
-            image="marek.png"
-            role="Executive"
-          />
-          <Member
-            name="Romina Paridel"
-            image="romina.png"
-            role="Executive"
-          />
-          <Member
-            name="Timothy Leung"
-            image="timothy.png"
-            role="Executive"
-          />
-                 </div>
-                 <div>
           <Member
             name="James Streeter"
             image="james.png"
             role="Executive"
             href="https://www.linkedin.com/in/james-streeter-19b111380/"
           />
-  </div>
+        </div>
       </div>
     </div>
   );
